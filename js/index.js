@@ -54,8 +54,11 @@
 				$(".floatDeco").fadeOut();
 				$(".pressTitle").removeClass("show");	
 				$(".floatTitle").removeClass("show");
+				$(".floatBtn").hide();
+				$(".squre01").fadeOut().removeClass("scaleBig")
+				testVideoTimer = setInterval(testVideo,1000);
 			})
-			$(".floatBtn").on("touchmove",function(e){
+			/*$(".floatBtn").on("touchmove",function(e){
 				e.preventDefault(); 
 				if($("video")[0].currentTime >= $("video")[0].duration){
 			 		//alert("视频播放完成")
@@ -67,8 +70,8 @@
 		        	$(".EWM").fadeIn();
 					clearInterval(testVideoTimer)
 		     	}	
-			})
-			$(".floatBtn").on("touchend",function(e){
+			})*/
+			/*$(".floatBtn").on("touchend",function(e){
 				e.preventDefault(); 
 				$("video")[0].pause();
 				console.log($("video")[0].currentTime,$("video")[0].duration)
@@ -85,7 +88,7 @@
 					$(".pressTitle").addClass("show");	
 					$(".floatTitle").addClass("show");	
 				}
-			})
+			})*/
 			
 			
 			function testVideo(){
